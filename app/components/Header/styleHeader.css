@@ -44,3 +44,89 @@
 .lang-switcher:hover {
   background-color: #3a415a;
 }
+
+.burger-menu {
+  display: none;
+  width: 30px;
+  height: 24px;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Полоски бургера */
+.burger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #CCD6F6;
+  border-radius: 3px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+/* Расположение полосок */
+.burger-line:nth-child(1) { top: 0; }
+.burger-line:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.burger-line:nth-child(3) { bottom: 0; }
+
+/* Анимация "Крестик" */
+.burger-line.open:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.burger-line.open:nth-child(2) {
+  opacity: 0;
+}
+.burger-line.open:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.lang-switcher-mobile {
+  display: none;
+  background-color: #2a3149;
+  border: 1px solid #2a3149;
+  position: static;
+  transform: none;
+  right: auto;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none; 
+  }
+
+  .lang-switcher-desktop {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .header-nav.mobile-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #112240;
+    z-index: 1000;
+    gap: 30px;
+  }
+
+  .header-nav.mobile-open a {
+    font-size: 24px; 
+  }
+
+  .lang-switcher-mobile {
+    display: block;
+  }
+}
