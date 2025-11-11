@@ -1,0 +1,63 @@
+.about-section {
+  width: 100%;
+}
+
+.about-hero-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding: 80px 20px;
+  position: relative;
+  background-image: url('/HeroBG.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #64FFDA; 
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+
+.hero-title,
+.hero-image-container,
+.hero-name {
+  position: relative;
+  z-index: 2; 
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem; 
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.hero-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #CCD6F6;
+  margin-bottom: 20px;
+}
+
+.hero-profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #CCD6F6;
+}
