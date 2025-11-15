@@ -1,0 +1,71 @@
+.about-section {
+  width: 100%;
+}
+
+.about-details-part {
+  background-color: #0A192F;
+  color: #CCD6F6;
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.details-content-wrapper {
+  max-width: 1300px;
+  margin: 0 auto 60px auto;
+}
+
+.education-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.education-card {
+  background-color: #112240; 
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #64FFDA;
+  margin-bottom: 10px;
+}
+
+.card-university{
+  font-size: 1rem;
+  color: #CCD6F6;
+  margin-bottom: 8px;
+}
+
+.card-specialty {
+  font-size: 1rem;
+  color: #8892B0;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.card-dates {
+  font-size: 0.9rem;
+  color: #64FFDA;
+  margin-top: 15px;
+}
