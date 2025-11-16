@@ -6,24 +6,21 @@ interface SkillCardProps {
   iconSrc: string;      
   name: string;         
   level: string;        
-  iconHasBg?: boolean;  
 }
 
 const SkillCard: React.FC<SkillCardProps> = ({ 
   iconSrc, 
   name, 
   level, 
-  iconHasBg = false 
 }) => {
-  const iconContainerClassName = `skill-icon-container ${iconHasBg ? 'has-bg' : ''}`;
   return (
     <div className="skill-card">
-      <div className={iconContainerClassName}>
+      <div className="skill-icon-container">
         <Image 
           src={iconSrc} 
           alt={name} 
-          width={40} 
-          height={40}
+          width={50} 
+          height={50}
           className="skill-icon"
         />
       </div>

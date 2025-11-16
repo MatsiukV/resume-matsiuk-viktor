@@ -1,0 +1,27 @@
+.skills-section {
+  background-color: #0A192F; 
+  width: 100%;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #CCD6F6;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px; 
+}
+
+.skills-section > .skills-title:first-of-type {
+  margin-top: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
