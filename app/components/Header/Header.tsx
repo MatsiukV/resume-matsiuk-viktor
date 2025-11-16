@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     <header className="header-container">
       <nav className={`header-nav ${isMenuOpen ? 'mobile-open' : ''}`}>
         <Link href="/" onClick={handleLinkClick}>Про мене</Link>
-        <Link href="/skils" onClick={handleLinkClick}>Навички</Link>
+        <Link href="/skills" onClick={handleLinkClick}>Навички</Link>
         <Link href="/projects" onClick={handleLinkClick}>Проекти</Link>
         <Link href="/contact" onClick={handleLinkClick}>Контакти</Link>
         <div 
